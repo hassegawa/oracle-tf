@@ -3,7 +3,7 @@
 
 * build
   * $ docker login
-  * $ docker buildx build --platform linux/arm64,linux/amd64 -t hassegawa/machine:0.1.1 -o type=registry .
+  * $ docker buildx build --platform linux/arm64,linux/amd64 -t DOCKER/IMAGENAME:IMAGETAG -o type=registry .
 
 * run
   * $ docker create --name machine DOCKER/IMAGENAME:IMAGETAG
