@@ -9,7 +9,7 @@ RUN apt update && apt install -y git php-cli php-curl php-xml jq nano unzip curl
     groupadd docker; \
     usermod -aG docker ubuntu;
 
-# SECOND build to generate this layer, uncomment after first build
+# SECOND build to generate this layer, uncomment after first build and build again
 # RUN cd /compose && \
 #     curl -sS https://getcomposer.org/installer -o composer-setup.php && \
 #     HASH=`curl -sS https://composer.github.io/installer.sig` && \
@@ -17,7 +17,7 @@ RUN apt update && apt install -y git php-cli php-curl php-xml jq nano unzip curl
 #     php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
 #     mkdir /app
 
-# THIRT build to generate this layer, uncommnet after second build
+# THIRT build to generate this layer, uncommnet after second build and build again
 # RUN cd /app && \ 
 #     git clone https://github.com/hassegawa/oci-arm-host-capacity.git && \
 #     cd oci-arm-host-capacity && \

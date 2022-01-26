@@ -1,7 +1,7 @@
 # oracle-tf
 ### [source and config](https://github.com/hitrov/oci-arm-host-capacity)
 
-* build
+* build: one build by layer on Dockerfile
   * docker buildx build --platform linux/arm64,linux/amd64 -t hassegawa/machine:0.1.1 -o type=registry .
 
 * run
